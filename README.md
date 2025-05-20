@@ -31,7 +31,7 @@ Banerjee_Dhonushree_102303592_Chatbot_Final/
 ### 1. Clone the repository
 
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+git clone https://github.com/Dhonushree/flask-chatbot.git
 cd Banerjee_Dhonushree_102303592_Chatbot_Final/04-Implementation
 
 2. Create and activate a virtual environment
