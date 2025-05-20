@@ -1,0 +1,24 @@
+# System Design Overview
+
+## Layers:
+
+### 1. Presentation Layer
+- HTML templates: `chat.html`, `admin.html`
+- JS: `chat.js` sends AJAX requests to Flask API
+- CSS: Responsive design via `style.css`
+
+### 2. Application Layer
+- `routes.py`: Handles chat POST requests via `/api/chat`
+- Uses Flask Blueprints for modular design
+
+### 3. Processing Layer
+- `nlp_processor.py`: Tokenizes input using NLTK
+- Maps academic slang to formal terms via `SLANG_MAP`
+
+### 4. Data Layer
+- `models.py`: SQLAlchemy ORM model `ChatLog`
+- Logs each message and response with timestamp
+
+## Deployment
+- `.env` used for environment configs
+- Runs with `flask run` or WSGI for production
